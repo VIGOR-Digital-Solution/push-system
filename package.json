@@ -16,7 +16,8 @@
     "prisma:migrate:reset": "npx dotenv -e .env.local -- prisma migrate reset",
     "prisma:db:seed": "npx dotenv -e .env.local -- prisma db seed",
     "prisma:studio": "npx dotenv -e .env.local -- prisma studio",
-    "prisma:migrate:deploy": "npx dotenv -e .env.local -- prisma migrate deploy"
+    "prisma:migrate:deploy": "npx dotenv -e .env.local -- prisma migrate deploy",
+    "db:init": "npm run prisma:generate && npm run prisma:migrate:deploy && npm run prisma:db:seed"
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
