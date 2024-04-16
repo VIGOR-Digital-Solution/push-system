@@ -1,0 +1,17 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/api/prisma/print/route": "app/api/prisma/print/route.js",
+  "/api/prisma/revert/route": "app/api/prisma/revert/route.js",
+  "/api/prisma/settings/route": "app/api/prisma/settings/route.js",
+  "/api/prisma/pick/route": "app/api/prisma/pick/route.js",
+  "/api/pick/route": "app/api/pick/route.js",
+  "/api/revert/route": "app/api/revert/route.js",
+  "/api/prisma/warnings/route": "app/api/prisma/warnings/route.js",
+  "/api/settings/route": "app/api/settings/route.js",
+  "/warnings/page": "app/warnings/page.js",
+  "/api/warnings/route": "app/api/warnings/route.js",
+  "/api/print/route": "app/api/print/route.js",
+  "/page": "app/page.js",
+  "/api/test/route": "app/api/test/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+}

@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL")
+}
+
+model StatusEnum {
+  value   String    @unique
+  warning Warning[]
+}
+
+model Warning {
+  id         String      @id @default(dbgenerated("newid()")) @db.UniqueIdentifier
+  ref        String      @unique
+  statusEnum StatusEnum? @relation(fields: [status], references: [value])
+  status     String?
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+}
+
+model Setting {
+  id          String   @id @default(dbgenerated("newid()")) @db.UniqueIdentifier
+  refTitle    String   @unique
+  title       String?
+  description String?
+  value       Decimal? @db.Decimal(20, 2)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
