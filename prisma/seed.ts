@@ -34,6 +34,12 @@ async function main() {
           "This is the panel threshold to categorize label status. The panel value reaches this threshold will be indicated as exhaust. The panel value is in unit",
         value: "0",
       },
+      {
+        refTitle: "font_size",
+        title: "Font Size",
+        description: "This is the font size of overall user interface text",
+        value: "12",
+      },
     ].map((val) =>
       prisma.setting.upsert({
         where: { refTitle: val.refTitle },
