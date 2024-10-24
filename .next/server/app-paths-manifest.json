@@ -1,18 +1,18 @@
 {
   "/_not-found": "app/_not-found.js",
-  "/api/pick/route": "app/api/pick/route.js",
-  "/api/print/route": "app/api/print/route.js",
   "/api/prisma/revert/route": "app/api/prisma/revert/route.js",
-  "/api/prisma/settings/route": "app/api/prisma/settings/route.js",
+  "/api/print/route": "app/api/print/route.js",
   "/api/prisma/print/route": "app/api/prisma/print/route.js",
-  "/api/revert/route": "app/api/revert/route.js",
-  "/api/settings/route": "app/api/settings/route.js",
+  "/api/prisma/settings/route": "app/api/prisma/settings/route.js",
   "/api/prisma/warnings/route": "app/api/prisma/warnings/route.js",
-  "/api/warnings/route": "app/api/warnings/route.js",
-  "/warnings/page": "app/warnings/page.js",
-  "/page": "app/page.js",
+  "/api/revert/route": "app/api/revert/route.js",
   "/api/prisma/pick/route": "app/api/prisma/pick/route.js",
+  "/api/pick/route": "app/api/pick/route.js",
+  "/api/settings/route": "app/api/settings/route.js",
+  "/warnings/page": "app/warnings/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/api/prisma/components/route": "app/api/prisma/components/route.js",
-  "/api/test/route": "app/api/test/route.js"
+  "/page": "app/page.js",
+  "/api/warnings/route": "app/api/warnings/route.js",
+  "/api/test/route": "app/api/test/route.js",
+  "/api/prisma/components/route": "app/api/prisma/components/route.js"
 }
